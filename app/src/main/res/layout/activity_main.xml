@@ -24,11 +24,11 @@
     </LinearLayout>
 
     <FrameLayout
+        android:id="@+id/FL"
         android:layout_marginTop="20dp"
-        android:background="@color/white"
+        android:background="#D1895D"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/FL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -53,20 +53,25 @@
 
             <Button
                 android:id="@+id/BT1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:text="Вход"
-                android:textSize="25dp" />
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_exit" />
 
             <Button
                 android:id="@+id/BT2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
                 android:text="Регистрация"
-                android:textSize="25dp" />
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_exit"/>
         </LinearLayout>
 
     </FrameLayout>
@@ -76,10 +81,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="40dp"
         android:id="@+id/LL1"
-        android:background="@color/white"
+        android:background="#D1895D"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="vertical">
@@ -88,6 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="35dp"
+            android:textColor="@color/black"
             android:layout_gravity="center"
             android:text="Регистрация"/>
         <TextView
@@ -95,12 +101,14 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:layout_gravity="center"
+            android:textColor="@color/white"
             android:text="Регистрация открыта ТОЛЬКО для менеджеров"/>
 
         <EditText
             android:id="@+id/ET4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:layout_marginTop="20dp"
             android:textSize="20dp"
             android:layout_gravity="center"
@@ -111,6 +119,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textSize="20dp"
+            android:textColor="@color/black"
             android:layout_gravity="center"
             android:hint="Фамилия                          "/>
         <EditText
@@ -118,6 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:hint="Почта                                 "/>
@@ -127,6 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textSize="20dp"
+            android:textColor="@color/black"
             android:inputType="textPassword"
             android:layout_gravity="center"
             android:hint="Пароль                               "/>
@@ -135,6 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:hint="Номер телефона             "/>
@@ -148,11 +160,13 @@
             android:hint="Ваш nickname                   "/>
         <Button
             android:id="@+id/BTT"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
             android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_exit"
             android:text="Зарегистрироваться"/>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -163,23 +177,24 @@
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/white"
             xmlns:tools="http://schemas.android.com/tools"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Если вы зарегистрированы,"/>
             <TextView
                 android:id="@+id/TV3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
-                android:textColor="#2842D1"
+                android:textColor="#000000"
                 android:text="войдите"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text=" в аккаунт"/>
         </LinearLayout>
 
@@ -193,7 +208,7 @@
         android:layout_marginBottom="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@color/white"
+        android:background="#D1895D"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/LL2"
         android:orientation="vertical">
@@ -211,6 +226,7 @@
             android:layout_marginTop="20dp"
             android:textSize="20dp"
             android:layout_gravity="center"
+            android:textColor="@color/black"
             android:hint="Введите nickname       "/>
         <EditText
             android:id="@+id/ETT2"
@@ -218,16 +234,19 @@
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:inputType="textPassword"
             android:hint="Введите пароль          "/>
         <Button
             android:id="@+id/BT"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
             android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_exit"
             android:text="Войти"
             />
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -238,19 +257,19 @@
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/white"
             xmlns:tools="http://schemas.android.com/tools"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="Если вы не зарегистрированы,кликнете "/>
             <TextView
                 android:id="@+id/TV2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
-                android:textColor="#2842D1"
+                android:textColor="#000000"
                 android:text="здесь"/>
         </LinearLayout>
     </LinearLayout>

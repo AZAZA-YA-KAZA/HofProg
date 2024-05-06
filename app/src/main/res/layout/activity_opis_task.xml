@@ -4,14 +4,17 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="#CEA58C"
     tools:context=".Opis_task">
 
     <TextView
         android:id="@+id/Number"
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Задача Х"
+        android:background="#9E6541"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColor="#000000"
         android:textSize="35dp"
         android:layout_gravity="center"/>
 
@@ -36,6 +39,7 @@
 
             <TextView
                 android:id="@+id/Name"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Пингвины"
@@ -43,6 +47,7 @@
 
             <TextView
                 android:id="@+id/Srok"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
@@ -60,7 +65,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
-        android:background="#B1B1B1"
+        android:background="#809E6541"
         android:orientation="vertical">
 
         <TextView
@@ -70,7 +75,7 @@
             android:layout_marginRight="10dp"
             android:gravity="right"
             android:text="x"
-            android:textColor="#636363"
+            android:textColor="@color/black"
             android:textSize="30dp" />
 
         <TextView
@@ -78,8 +83,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:textColor="@color/black"
             android:text="Напишите код:"
-            android:textColor="#636363"
             android:textSize="25dp" />
 
         <EditText
@@ -89,20 +94,23 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
+            android:textColor="@color/black"
             android:gravity="left"
             android:hint="public class answer{...}"
             android:textSize="20dp" />
 
         <Button
             android:id="@+id/BTT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="55dp"
             android:layout_gravity="right"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="Отправить"
-            android:textSize="20dp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_rounded"
+            android:textSize="22dp"
+            android:text="Отправить"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -118,6 +126,9 @@
         android:gravity="center">
         <Button
             android:id="@+id/man"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_rounded"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -126,18 +137,21 @@
             android:textSize="20dp" />
         <Button
             android:id="@+id/prog"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_rounded"
             android:layout_width="175dp"
-            android:textSize="20dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
             android:text="Прикрепить решение"/>
     </LinearLayout>
 
     <TextView
         android:layout_marginLeft="10dp"
         android:textSize="22dp"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Описание задачи:"/>
@@ -145,9 +159,11 @@
     <TextView
         android:id="@+id/Opis"
         android:gravity="left"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
         android:text="Описание................................................................................................... "
         android:textSize="22dp" />
@@ -161,10 +177,13 @@
         <Button
             android:id="@+id/Exit"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_gravity="right"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
             android:textSize="20dp"
-            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/button_exit"
             android:text="К задачам"/>
     </LinearLayout>
 </LinearLayout>
